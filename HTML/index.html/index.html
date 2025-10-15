@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal | Proyectos Gráficos de Emilio Gael Vazquez Molina</title>
+    <style>
+        /* DEFINICIÓN DE COLORES */
+        :root {
+            --color-fondo-claro: #fcfcfc;    /* Blanco/Gris muy claro */
+            --color-fondo-oscuro: #2c2c2c;   /* Gris oscuro casi negro */
+            --color-acento: #FFD700;         /* Dorado/Amarillo Intenso */
+            --color-texto: #404040;          /* Gris oscuro para el texto normal */
+        }
+        
+        /* ESTILOS GLOBALES */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            background-color: var(--color-fondo-claro); /* Fondo claro */
+            color: var(--color-texto);
+        }
+        
+        /* ENCABEZADO PERSONALIZADO (GRIS OSCURO/NEGRO CON DORADO) */
+        .header {
+            background-color: var(--color-fondo-oscuro); 
+            color: var(--color-fondo-claro); /* Texto blanco en fondo oscuro */
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 3.5em; /* Letras grandes para el título principal */
+            margin: 0;
+            letter-spacing: 5px;
+            color: var(--color-acento); /* Color Dorado para el Título */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        .header h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* CUERPO PRINCIPAL Y GRID DE PROYECTOS */
+        .content {
+            padding: 0 20px 50px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-link {
+            display: block;
+            padding: 30px 20px;
+            background-color: #ffffff; /* Fondo del botón blanco/gris muy claro */
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--color-texto);
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0; /* Borde gris sutil */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        /* Efecto al pasar el mouse (Dorado/Gris) */
+        .project-link:hover {
+            background-color: var(--color-acento); /* Fondo Dorado al pasar el mouse */
+            color: var(--color-fondo-oscuro); /* Texto Gris Oscuro en fondo Dorado */
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--color-acento);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PROYECTOS GRÁFICOS</h1>
+        <h2>Emilio Gael Vazquez Molina</h2>
+    </div>
+
+    <div class="content">
+        <div class="projects-grid">
+            <a href="muneco_nieve_saluda/index.html" class="project-link">1. Muñeco de nieve que saluda</a>
+            <a href="que_hay_de_cenar/index.html" class="project-link">2. ¿Qué hay de cena?</a>
+            <a href="dia_nevado_soleado/index.html" class="project-link">3. Día nevado soleado</a>
+            <a href="diente_conejo/index.html" class="project-link">4. Dientes de conejo</a>
+            <a href="rana/index.html" class="project-link">5. Rana</a>
+            <a href="sol_explota/index.html" class="project-link">6. Sol que explota (Animación)</a>
+            <a href="nubes_separan/index.html" class="project-link">7. Nubes que se separan (Animación)</a>
+            <a href="estrella_fugaz/index.html" class="project-link">8. Estrella fugaz (Animación)</a>
+        </div>
+    </div>
+</body>
+</html>
